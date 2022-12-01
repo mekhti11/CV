@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.main.letstart.LetsStartFragment">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_lets_start"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_rounded_blue_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/securitaspro_bold"
+        android:text="@string/let_s_start"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_good_to_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorSoft"
+        android:textSize="19sp"
+        android:text="@string/and_you_are_good_to_go"
+        android:fontFamily="@font/securitaspro_regular"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_lets_start"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:text="@string/_5_easy_steps"
+        android:fontFamily="@font/securitaspro_regular"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toStartOf="@id/txt_good_to_go"
+        app:layout_constraintBottom_toTopOf="@id/txt_good_to_go"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/group_2"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

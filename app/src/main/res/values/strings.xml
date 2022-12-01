@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GlobalCV</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_my_resume">Create My Resume</string>
+    <string name="quick_pain_free_and">Quick, pain-free, and effective</string>
+    <string name="toptalent_resume_builder">toptalent\nresume builder</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="and_you_are_good_to_go">and you are good to go! 🎉</string>
+    <string name="_5_easy_steps">5 easy steps</string>
+    <string name="personel">PERSONAL</string>
+    <string name="education">EDUCATION</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="profession">Profession</string>
+    <string name="state_province">State / province</string>
+    <string name="zip_code">Zip code</string>
+    <string name="phone">Phone</string>
+    <string name="email_address">Email address</string>
+    <string name="languages">Languages</string>
+    <string name="add_another">+ ADD ANOTHER</string>
+    <string name="save">Save</string>
+</resources>

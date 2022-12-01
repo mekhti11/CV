@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/createMyResumeFragment">
+
+    <fragment
+        android:id="@+id/createMyResumeFragment"
+        android:name="tr.com.katu.globalcv.view.main.createmyresume.CreateMyResumeFragment"
+        android:label="fragment_create_my_resume"
+        tools:layout="@layout/fragment_create_my_resume" >
+        <action
+            android:id="@+id/action_createMyResumeFragment_to_letsStartFragment"
+            app:destination="@id/letsStartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/letsStartFragment"
+        android:name="tr.com.katu.globalcv.view.main.letstart.LetsStartFragment"
+        android:label="fragment_lets_start"
+        tools:layout="@layout/fragment_lets_start" >
+        <action
+            android:id="@+id/action_letsStartFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="tr.com.katu.globalcv.view.main.personal.PersonalFragment"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal" />
+</navigation>

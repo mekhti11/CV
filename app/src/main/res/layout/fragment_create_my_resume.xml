@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.main.createmyresume.CreateMyResumeFragment">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_create_my_resume"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_rounded_blue_btn"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/securitaspro_bold"
+        android:text="@string/create_my_resume"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_pain_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorSoft"
+        android:textSize="19sp"
+        android:text="@string/quick_pain_free_and"
+        android:fontFamily="@font/securitaspro_regular"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_create_my_resume"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@id/txt_pain_free"
+        app:layout_constraintStart_toStartOf="@id/txt_pain_free"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app_icon"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            android:text="@string/toptalent_resume_builder"
+            android:fontFamily="@font/securitaspro_regular"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/create_my_resume"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@id/ll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
